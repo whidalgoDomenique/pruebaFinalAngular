@@ -1,0 +1,37 @@
+<div class="container">
+    <!-- <div *ngIf="users.length; else empty"> -->
+    <div>
+        <table class="table is-striped"> 
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Years</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let us of users">
+                    <td>{{us.id}}</td>
+                    <td>{{us.name}}</td>
+                    <td>{{us.email}}</td>
+                    <td>{{us.role}}</td>
+                    <td>{{us.years}}</td>
+                    <td>
+                        <button class="button is-small is-success"
+                            (click)="handleUpdate(us.id)">Actualizar</button>
+
+                        <button  class="button is-small is-danger"
+                            (click)="handleDelete(us)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+    </div>
+</div>

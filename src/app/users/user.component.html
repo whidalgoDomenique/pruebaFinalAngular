@@ -1,0 +1,9 @@
+<div class="users" style="text-align: center;">
+<app-user-list 
+[users] = "users"
+(deleteUser)="deleteUser($event)">
+
+</app-user-list>
+
+<a routerLink="/new-user" class="button is-info">Add User</a>
+</div>

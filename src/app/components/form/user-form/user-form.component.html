@@ -1,0 +1,79 @@
+<div class="product-form container" >
+<form action="" #formularioUser="ngForm" autocomplete="off">
+        <div class="field" >
+                <label class="label">
+                    <!-- {{ name.invalid && name.touched ? 'Ingresa un nombre válido' : 'Nombre:'}} -->
+                </label>
+                <div class="control">
+                    <input
+                        name="name"
+                        class="input"
+                        [(ngModel)]="user.name"
+                        type="text"
+                        placeholder="Name"
+                        #name="ngModel"
+                        required
+                    />
+                </div>
+            </div>
+    
+    <div class="field">
+            <label class="label">
+                <!-- {{name.invalid && name.touched ? 'Ingrese un nombre valido' : 'Nombre'}} -->
+            </label>
+            <div class="control">
+                <input
+                name="email"
+                class="input"
+                [(ngModel)]="user.email"
+                type="text"
+                placeholder="Email"
+                #email="ngModel"
+                />
+            </div>
+    
+        </div>
+
+        <div class="field">
+                <label class="label">
+                    <!-- {{name.invalid && name.touched ? 'Ingrese un nombre valido' : 'Nombre'}} -->
+                </label>
+                <div class="control">
+                    <input
+                    name="role"
+                    class="input"
+                    [(ngModel)]="user.role"
+                    type="text"
+                    placeholder="role"
+                    #role="ngModel"
+                    />
+                </div>
+        
+            </div>
+
+            <div class="field">
+                    <label class="label">
+                        <!-- {{name.invalid && name.touched ? 'Ingrese un nombre valido' : 'Nombre'}} -->
+                    </label>
+                    <div class="control">
+                        <input
+                        name="Years"
+                        class="input"
+                        [(ngModel)]="user.years"
+                        type="text"
+                        placeholder="Years"
+                        #role="ngModel"
+                        />
+                    </div>
+            
+                </div>
+
+                <div class="field">
+                        <div class="control">
+                            <button class="button is-link" (click)="onSubmit(formularioUser)" >Guardar</button>
+                        </div>
+                    </div>
+
+</form>
+
+</div>
